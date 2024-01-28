@@ -8,7 +8,7 @@ from .models import Blog
 
 class BlogListCreateAPIView(ListCreateAPIView):
     serializer_class = BlogSerializer
-    queryset = Blog.objects.all().order_by('-created_at')
+    queryset = Blog.objects.all()
 
 
 class BlogRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
